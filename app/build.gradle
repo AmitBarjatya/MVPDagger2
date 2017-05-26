@@ -3,8 +3,8 @@ apply plugin: 'com.neenbedankt.android-apt'
 
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "com.patryk.mvpdagger2"
@@ -30,7 +30,7 @@ android {
 dependencies {
     apt 'com.google.dagger:dagger-compiler:2.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.google.dagger:dagger:2.0'
     provided 'org.glassfish:javax.annotation:10.0-b28' //needed to resolve compilation errors, thanks to tutplus.org for finding the dependency
     // http://stackoverflow.com/questions/27036933/how-to-set-up-dagger-dependency-injection-from-scratch-in-android-project
